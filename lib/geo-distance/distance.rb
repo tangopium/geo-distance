@@ -19,7 +19,7 @@ class GeoDistance
   end
 
   def number
-    distance.round_to(precision[unit])
+    distance.round(precision[unit])
   end
   
   private

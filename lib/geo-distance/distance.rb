@@ -21,4 +21,16 @@ class GeoDistance
   def number
     distance.round_to(precision[unit])
   end
+  
+  private
+      
+  def precision
+    {
+      :feet => 0,
+      :meters => 2,
+      :km => 4,
+      :miles => 4
+    }
+  end 
+  
 end
